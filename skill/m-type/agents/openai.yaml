@@ -1,0 +1,6 @@
+interface:
+  display_name: "麦门人格档案"
+  short_description: "连接麦当劳记录，生成你的复古麦门人格、时光档案与手机长图"
+  default_prompt: "用 $m-type 生成我的麦门人格与时光档案，先检查麦当劳连接。"
+policy:
+  allow_implicit_invocation: true

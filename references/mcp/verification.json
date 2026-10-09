@@ -1,0 +1,21 @@
+{
+  "observedOn": "2026-10-09",
+  "transport": "Streamable HTTP",
+  "authentication": "Bearer token via local hidden input",
+  "handshake": "passed",
+  "toolDiscovery": "passed",
+  "orderListCall": {
+    "arguments": {},
+    "isError": false,
+    "businessSuccess": true,
+    "businessCode": 200,
+    "dataShape": {},
+    "outcome": "no_list_returned",
+    "receivedCount": null
+  },
+  "verifiedOrderSamples": 0,
+  "queryOrderCalled": false,
+  "queryMealDetailCalled": false,
+  "recordMapping": "schema-based implementation; pending nonempty real-order verification",
+  "tokenPersisted": false
+}

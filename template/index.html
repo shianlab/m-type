@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#cf2c21"><title>M-TYPE · 麦门人格与时光档案</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="decor.css"><link rel="stylesheet" href="balance.css">
+</head>
+<body>
+  <nav class="toolbar" aria-label="档案操作">
+    <a class="brand" href="#"><span class="brand-symbol" aria-hidden="true"><svg width="29" height="28" viewBox="0 0 90 70"><path d="M10 62 C10 26 16 8 27 8 C38 8 44 26 44 62 C44 26 50 8 61 8 C72 8 78 26 78 62" fill="none" stroke="#ffbc0d" stroke-width="10"/></svg></span><span>M-TYPE <small>麦门人格档案</small></span></a>
+    <div class="actions"><button id="galleryButton" class="button secondary">16 型人格</button><label class="button secondary" for="importFile">导入订单</label><input id="importFile" type="file" accept=".json,application/json" hidden><button id="exportButton" class="button primary">保存长图 ↗</button></div>
+  </nav>
+  <main class="workspace">
+    <div class="workspace-note"><span id="sourcePill">● 演示数据</span><span>把快乐，存成一份档案。</span></div>
+    <div id="previewNotice" class="preview-notice" hidden>正在预览人格角色，时光档案沿用当前数据。<button id="resetPreview">回到分析结果</button></div>
+    <section id="questions" class="questions" hidden aria-label="补充点餐偏好"></section>
+    <article id="report" class="report" aria-label="麦门人格与时光档案"></article>
+    <div class="below-controls"><label><input type="checkbox" id="showAmount"> 在档案中展示消费金额</label><button id="resetDemo" class="text-button">恢复演示数据</button><p>金额默认隐藏；只在每笔有效记录的实付金额都已知时展示。</p></div>
+    <p class="page-note">独立开发创意作品，非麦当劳官方产品。人格是趣味消费画像。导入文件仅在当前浏览器内处理。</p>
+  </main>
+  <dialog id="gallery"><div class="dialog-heading"><div><small>THE M-TYPE COLLECTION</small><h2>十六种快乐，各有自己的形状。</h2></div><button id="closeGallery" class="close-button" aria-label="关闭人格图鉴">×</button></div><p class="dialog-hint">这里预览角色。实际分析会根据订单与补充回答自动匹配。</p><div id="galleryGrid" class="gallery-grid"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+  <script src="../node_modules/html-to-image/dist/html-to-image.js"></script>
+  <script src="personalities.js"></script><script src="assets.js"></script><script src="core.js"></script><script src="report-model.js"></script><script src="demo.js"></script><script src="app.js"></script>
+</body>
+</html>

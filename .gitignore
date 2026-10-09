@@ -1,0 +1,14 @@
+node_modules/
+._*
+.DS_Store
+.env
+.env.*
+!.env.example
+output/
+.local/
+dist/
+assets/design-reference/
+assets/personality-samples/*
+!assets/personality-samples/CSNL-retro-v1.png
+docs/README.github-draft.md
+M-TYPE_%E9%BA%A6%E9%97%A8%E4%BA%BA%E6%A0%BC%E6%A1%A3%E6%A1%88_%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88.md

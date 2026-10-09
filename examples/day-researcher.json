@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "source": "demo",
+  "showAmount": false,
+  "orders": [
+    {
+      "id": "synthetic-day-1",
+      "status": "completed",
+      "orderedAt": "2026-09-01T08:30:00+08:00",
+      "currency": "CNY",
+      "amount": 20,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 2,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-2",
+      "status": "completed",
+      "orderedAt": "2026-09-03T12:30:00+08:00",
+      "currency": "CNY",
+      "amount": 21,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-3",
+      "status": "completed",
+      "orderedAt": "2026-09-05T12:30:00+08:00",
+      "currency": "CNY",
+      "amount": 22,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "双层吉士汉堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-4",
+      "status": "completed",
+      "orderedAt": "2026-09-07T13:30:00+08:00",
+      "currency": "CNY",
+      "amount": 23,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "麦香鱼",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-5",
+      "status": "completed",
+      "orderedAt": "2026-09-09T15:30:00+08:00",
+      "currency": "CNY",
+      "amount": 24,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "板烧鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-6",
+      "status": "completed",
+      "orderedAt": "2026-09-11T12:30:00+08:00",
+      "currency": "CNY",
+      "amount": 25,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "麦乐鸡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-7",
+      "status": "completed",
+      "orderedAt": "2026-09-13T18:30:00+08:00",
+      "currency": "CNY",
+      "amount": 26,
+      "discountAmount": 3,
+      "items": [
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-8",
+      "status": "completed",
+      "orderedAt": "2026-09-15T12:30:00+08:00",
+      "currency": "CNY",
+      "amount": 27,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-9",
+      "status": "completed",
+      "orderedAt": "2026-09-17T12:30:00+08:00",
+      "currency": "CNY",
+      "amount": 28,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "圆筒冰淇淋",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synthetic-day-10",
+      "status": "completed",
+      "orderedAt": "2026-09-19T22:30:00+08:00",
+      "currency": "CNY",
+      "amount": 29,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "苹果派",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    }
+  ]
+}

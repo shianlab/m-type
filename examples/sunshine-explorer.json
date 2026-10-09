@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "source": "demo",
+  "showAmount": false,
+  "orders": [
+    {
+      "id": "sun-demo-1",
+      "orderedAt": "2026-09-03T20:10:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·香辣脆鸡堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-2",
+      "orderedAt": "2026-09-04T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·黑椒牛肉堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-3",
+      "orderedAt": "2026-09-05T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·芝士鸡肉卷",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-4",
+      "orderedAt": "2026-09-06T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·热带水果派",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-5",
+      "orderedAt": "2026-09-07T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·焦糖咖啡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-6",
+      "orderedAt": "2026-09-08T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·莓果甜筒",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-7",
+      "orderedAt": "2026-09-09T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·柚子气泡饮",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-8",
+      "orderedAt": "2026-09-10T20:10:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·烤鸡肉堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-9",
+      "orderedAt": "2026-09-11T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·香草冰淇淋",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-10",
+      "orderedAt": "2026-09-12T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·花生麦旋风",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-11",
+      "orderedAt": "2026-09-13T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·早餐蛋堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-12",
+      "orderedAt": "2026-09-14T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·浓郁巧克力派",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-13",
+      "orderedAt": "2026-09-15T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·香辣脆鸡堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-14",
+      "orderedAt": "2026-09-16T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·黑椒牛肉堡",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-15",
+      "orderedAt": "2026-09-17T20:10:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·芝士鸡肉卷",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-demo-16",
+      "orderedAt": "2026-09-18T12:20:00+08:00",
+      "status": "completed",
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "模拟新品·热带水果派",
+          "quantity": 1,
+          "tags": [
+            "explorer"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "dataSource": "synthetic_only",
+  "cases": [
+    {
+      "slug": "night-guardian",
+      "code": "CSNL",
+      "source": "demo",
+      "count": 24,
+      "uniqueFoods": 4,
+      "day": 5,
+      "night": 19,
+      "from": "2026-09-01",
+      "to": "2026-09-24",
+      "personaSource": [
+        "orders",
+        "orders",
+        "orders",
+        "orders"
+      ]
+    },
+    {
+      "slug": "day-researcher",
+      "code": "CSDV",
+      "source": "demo",
+      "count": 10,
+      "uniqueFoods": 10,
+      "day": 8,
+      "night": 2,
+      "from": "2026-09-01",
+      "to": "2026-09-19",
+      "personaSource": [
+        "orders",
+        "orders",
+        "orders",
+        "orders"
+      ]
+    },
+    {
+      "slug": "sunshine-explorer",
+      "code": "EFDV",
+      "source": "demo",
+      "count": 16,
+      "uniqueFoods": 12,
+      "day": 13,
+      "night": 3,
+      "from": "2026-09-03",
+      "to": "2026-09-18",
+      "personaSource": [
+        "orders",
+        "orders",
+        "orders",
+        "orders"
+      ]
+    },
+    {
+      "slug": "empty-with-answers",
+      "code": "EFNV",
+      "source": "demo",
+      "count": 0,
+      "uniqueFoods": 0,
+      "day": 0,
+      "night": 0,
+      "from": null,
+      "to": null,
+      "personaSource": [
+        "questions",
+        "questions",
+        "questions",
+        "questions"
+      ]
+    }
+  ]
+}

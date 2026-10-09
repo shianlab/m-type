@@ -1,0 +1,13 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {analyze,normalize,story,localParts}=require('../template/core.js');
+function sample(code){return {orders:Array.from({length:10},(_,i)=>({id:String(i),status:'completed',orderedAt:`2026-09-${String(i+1).padStart(2,'0')}T${code[2]==='D'?'12':'21'}:30:00+08:00`,currency:'CNY',amount:10,discountAmount:code[1]==='S'?2:0,items:[{productName:code[3]==='L'?'同一餐品':'餐品'+i,quantity:1,tags:[code[0]==='C'?'classic':'explorer']}]}))};}
+for(const taste of ['C','E'])for(const style of ['S','F'])for(const time of ['D','N'])for(const habit of ['L','V']){const code=taste+style+time+habit;test('四维人格 '+code+' 稳定可复现',()=>{assert.equal(analyze(sample(code)).code,code);assert.deepEqual(analyze(sample(code)),analyze(sample(code)));});}
+test('按上海时区分时段，18:00 算夜间',()=>{assert.equal(localParts('2026-09-01T10:00:00Z').hour,18);const d=sample('CSDL');d.orders[0].orderedAt='2026-09-01T10:00:00Z';assert.equal(analyze(d).night,1);});
+test('重复订单与取消订单排除',()=>{const d=sample('CSDL');d.orders.push(d.orders[0],{id:'cancel',status:'cancelled'});const r=analyze(d);assert.equal(r.count,10);assert.equal(r.omitted,2);});
+test('缺少任何实付金额时不展示部分金额合计',()=>{const d=sample('CSDL');delete d.orders[0].amount;const r=analyze(d);assert.equal(r.amount,undefined);assert.equal(r.amountComplete,false);});
+test('0 元是已知金额，不是缺失金额',()=>{const d=sample('CSDL');d.orders.forEach(o=>o.amount=0);assert.equal(analyze(d).amount,0);});
+test('未知优惠不能补造 0，使用问答',()=>{const d=sample('CSDL');d.orders.forEach(o=>delete o.discountAmount);assert.equal(analyze(d).code,null);const r=analyze(d,{1:'F'});assert.equal(r.code,'CFDL');assert.equal(r.dimensions[1].source,'questions');});
+test('未知餐品标签通过问答，不从餐品名猜测经典新品',()=>{const d=sample('CSDL');d.orders.forEach(o=>o.items[0].tags=[]);assert.equal(analyze(d,{0:'E'}).code,'ESDL');assert.equal(analyze(d,{0:'E'}).dimensions[0].source,'questions');});
+test('没有订单时四维全部使用问答，档案保持空白',()=>{const r=analyze({orders:[]},{0:'E',1:'F',2:'N',3:'V'});assert.equal(r.code,'EFNV');assert.equal(r.from,null);assert.equal(r.timeline.length,0);assert.match(story(r),/还没有可分析/);});
+test('拒绝不带时区的时间和非正整数份数',()=>{const d=sample('CSDL');d.orders[0].orderedAt='2026-09-01T12:00:00';assert.throws(()=>normalize(d),/时区/);const e=sample('CSDL');e.orders[0].items[0].quantity=0;assert.throws(()=>normalize(e),/正整数/);});
+test('同餐品一笔订单出现两次，计份数两份但订单一次',()=>{const d=sample('CSDL');d.orders[0].items.push({...d.orders[0].items[0]});const r=analyze(d);assert.equal(r.ranked[0].quantity,11);assert.equal(r.ranked[0].orderCount,10);});
+test('仅一笔订单时不虚构中间时间线事件',()=>{const d=sample('CSDL');d.orders=d.orders.slice(0,1);const r=analyze(d);assert.equal(r.timeline.length,1);assert.equal(r.timeline[0].title,'这一口，留下了记录');});

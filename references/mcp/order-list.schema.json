@@ -1,0 +1,116 @@
+{
+  "observedOn": "2026-10-09",
+  "endpoint": "https://mcp.mcd.cn",
+  "name": "order-list",
+  "inputSchema": {
+    "type": "object",
+    "properties": {}
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "description": "No comments found.",
+        "properties": {
+          "list": {
+            "description": "订单列表",
+            "items": {
+              "properties": {
+                "beCode": {
+                  "description": "BE编码",
+                  "type": "string"
+                },
+                "beType": {
+                  "description": "门店类型",
+                  "type": "string"
+                },
+                "createTime": {
+                  "description": "下单时间",
+                  "type": "string"
+                },
+                "orderId": {
+                  "description": "订单编码",
+                  "type": "string"
+                },
+                "orderProductList": {
+                  "description": "商品",
+                  "items": {
+                    "properties": {
+                      "comboItemList": {
+                        "description": "子项列表",
+                        "items": {
+                          "properties": {
+                            "name": {
+                              "description": "子项名字",
+                              "type": "string"
+                            },
+                            "productCode": {
+                              "description": "商品code",
+                              "type": "string"
+                            },
+                            "quantity": {
+                              "description": "数量",
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "productCode": {
+                        "description": "商品code",
+                        "type": "string"
+                      },
+                      "productName": {
+                        "description": "商品名称",
+                        "type": "string"
+                      },
+                      "quantity": {
+                        "description": "商品数量",
+                        "type": "integer"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "orderStatus": {
+                  "description": "订单状态",
+                  "type": "string"
+                },
+                "orderType": {
+                  "description": "订单类型",
+                  "type": "string"
+                },
+                "realTotalAmount": {
+                  "description": "总金额",
+                  "type": "string"
+                },
+                "storeCode": {
+                  "description": "门店编码",
+                  "type": "string"
+                },
+                "storeName": {
+                  "description": "门店名称",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "message": {
+        "description": "No comments found.",
+        "type": "string"
+      },
+      "traceId": {
+        "description": "No comments found.",
+        "type": "string"
+      }
+    },
+    "description": "OK"
+  }
+}

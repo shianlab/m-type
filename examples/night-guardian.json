@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 1,
+  "source": "demo",
+  "showAmount": false,
+  "orders": [
+    {
+      "id": "demo-1",
+      "orderedAt": "2026-09-01T12:10:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-2",
+      "orderedAt": "2026-09-02T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-3",
+      "orderedAt": "2026-09-03T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-4",
+      "orderedAt": "2026-09-04T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-5",
+      "orderedAt": "2026-09-05T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-6",
+      "orderedAt": "2026-09-06T12:10:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-7",
+      "orderedAt": "2026-09-07T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-8",
+      "orderedAt": "2026-09-08T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-9",
+      "orderedAt": "2026-09-09T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-10",
+      "orderedAt": "2026-09-10T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-11",
+      "orderedAt": "2026-09-11T12:10:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-12",
+      "orderedAt": "2026-09-12T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-13",
+      "orderedAt": "2026-09-13T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-14",
+      "orderedAt": "2026-09-14T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-15",
+      "orderedAt": "2026-09-15T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-16",
+      "orderedAt": "2026-09-16T12:10:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-17",
+      "orderedAt": "2026-09-17T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-18",
+      "orderedAt": "2026-09-18T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-19",
+      "orderedAt": "2026-09-19T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-20",
+      "orderedAt": "2026-09-20T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-21",
+      "orderedAt": "2026-09-21T12:10:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 0,
+      "items": [
+        {
+          "productName": "麦辣鸡腿堡",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-22",
+      "orderedAt": "2026-09-22T22:15:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 24.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "可乐",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-23",
+      "orderedAt": "2026-09-23T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 19.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-24",
+      "orderedAt": "2026-09-24T21:30:00+08:00",
+      "status": "completed",
+      "currency": "CNY",
+      "amount": 29.9,
+      "discountAmount": 5,
+      "items": [
+        {
+          "productName": "巨无霸",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "productName": "薯条",
+          "quantity": 1,
+          "tags": [
+            "classic"
+          ]
+        }
+      ]
+    }
+  ]
+}

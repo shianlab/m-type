@@ -1,0 +1,35 @@
+{
+  "name": "m-type-retro-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "麦门人格与时光档案复古 HTML 模板",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "analyze": "node scripts/analyze.cjs",
+    "render": "node scripts/render.cjs",
+    "export": "node scripts/export.cjs",
+    "test:browser": "node scripts/verify-browser.cjs",
+    "test:generator": "node scripts/verify-generator.cjs",
+    "doctor": "node scripts/doctor.cjs",
+    "mcp:session": "node scripts/mcp-session.mjs",
+    "mcp:normalize": "node scripts/mcp-normalize.cjs",
+    "test:mcp-view": "node scripts/verify-mcp-view.cjs",
+    "package:skill": "node scripts/package-skill.cjs",
+    "test:skill": "node scripts/verify-skill.cjs",
+    "showcase": "node scripts/publish-showcase.cjs",
+    "package:cases": "node scripts/package-cases.cjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "ajv": "8.20.0",
+    "html-to-image": "1.11.13"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,16 @@
+
+/* 视觉检查后的平衡：底部场景完整，页脚文字保持清楚。 */
+.hero-store-scene{object-fit:cover;object-position:right bottom;width:70%;height:135px;opacity:.6}
+.closing-store-scene{bottom:-3px;width:74%;height:245px}
+.report-footer{background:#fff6e3f2;margin:0 -46px -28px;padding:15px 46px 20px;color:#806c54}
+.evidence .section-head{background:linear-gradient(90deg,#fff7e0b8,#fff7e054);padding:7px 5px;border-radius:3px}
+@media(max-width:700px){
+ .hero-store-scene{object-fit:cover;width:95%;height:100px;opacity:.52}
+ .closing{min-height:286px}
+ .closing-store-scene{bottom:0;width:117%;height:185px}
+ .report-footer{margin:0 -20px -19px;padding:14px 20px 17px;color:#78634a}
+}
+.report.export-layout .hero-store-scene{width:70%;height:135px;object-fit:cover}
+.report.export-layout .closing-store-scene{bottom:-3px;width:74%;height:245px}
+.report.export-layout .report-footer{margin:0 -46px -28px;padding:15px 46px 20px}
+

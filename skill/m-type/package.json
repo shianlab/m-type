@@ -1,0 +1,14 @@
+{
+  "name": "m-type-skill-runtime",
+  "version": "0.3.0",
+  "private": true,
+  "description": "M-TYPE 本地 Skill 运行包；HTML 零安装依赖，Playwright 仅用于自动 PNG",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "doctor": "node scripts/doctor.cjs",
+    "analyze": "node scripts/analyze.cjs",
+    "render": "node scripts/render.cjs",
+    "export": "node scripts/export.cjs"
+  },
+  "dependencies": { "playwright": "1.62.1" }
+}

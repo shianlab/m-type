@@ -1,0 +1,245 @@
+{
+  "observedOn": "2026-10-09",
+  "endpoint": "https://mcp.mcd.cn",
+  "name": "query-order",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "orderId": {
+        "description": "No comments found.",
+        "type": "string"
+      }
+    },
+    "required": [
+      "orderId"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "description": "No comments found.",
+        "properties": {
+          "couponList": {
+            "description": "优惠券列表",
+            "items": {
+              "properties": {
+                "couponName": {
+                  "description": "卡券名称",
+                  "type": "string"
+                },
+                "discountAmount": {
+                  "description": "优惠金额",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "createTime": {
+            "description": "下单时间",
+            "type": "string"
+          },
+          "deliveryInfo": {
+            "description": "配送信息",
+            "properties": {
+              "addressDetail": {
+                "description": "配送地址",
+                "type": "string"
+              },
+              "customerNickname": {
+                "description": "收件人姓名",
+                "type": "string"
+              },
+              "deliveryAddress": {
+                "description": "配送地址",
+                "type": "string"
+              },
+              "deliveryType": {
+                "description": "配送方式label 2=预约送出 1=立即送出",
+                "type": "string"
+              },
+              "expectDeliveryTime": {
+                "description": "预计送达时间 年月日时分秒",
+                "type": "string"
+              },
+              "mobilePhone": {
+                "description": "收件人手机号",
+                "type": "string"
+              },
+              "riderMobilePhone": {
+                "description": "配送骑士电话",
+                "type": "string"
+              },
+              "riderNickName": {
+                "description": "配送骑士",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "deliveryPrice": {
+            "description": "配送费",
+            "type": "string"
+          },
+          "expirePayTime": {
+            "description": "过期支付时间",
+            "type": "string"
+          },
+          "lockerCode": {
+            "description": "取餐柜密码",
+            "type": "string"
+          },
+          "lockerQrCode": {
+            "description": "取餐柜扫码二维码，按照这个格式进行输出![alt](lockerQrCode)",
+            "type": "string"
+          },
+          "mealAssistance": {
+            "description": "团餐助餐服务",
+            "properties": {
+              "code": {
+                "description": "助餐服务编码",
+                "type": "string"
+              },
+              "items": {
+                "description": "助餐服务项目",
+                "items": {
+                  "properties": {
+                    "name": {
+                      "description": "助餐服务项目名称",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "name": {
+                "description": "助餐服务名称",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "orderId": {
+            "description": "订单编码",
+            "type": "string"
+          },
+          "orderProductList": {
+            "description": "订单商品",
+            "items": {
+              "properties": {
+                "comboItemList": {
+                  "description": "子项列表",
+                  "items": {
+                    "properties": {
+                      "itemName": {
+                        "description": "子项或特调定制信息",
+                        "type": "string"
+                      },
+                      "itemQuantity": {
+                        "description": "数量",
+                        "type": "integer"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "price": {
+                  "description": "原价,单位元",
+                  "type": "string"
+                },
+                "productImage": {
+                  "description": "商品图片",
+                  "type": "string"
+                },
+                "productName": {
+                  "description": "商品名称",
+                  "type": "string"
+                },
+                "quantity": {
+                  "description": "数量",
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "orderStatus": {
+            "description": "订单状态 1待支付、2配餐中-已支付、4配送中、6已完成、7已取消、8已评价、10配餐中-餐厅确认配餐中",
+            "type": "string"
+          },
+          "payId": {
+            "description": "payId",
+            "type": "string"
+          },
+          "pickupCode": {
+            "description": "订单号（对应取餐码）",
+            "type": "string"
+          },
+          "productPrice": {
+            "description": "商品总价",
+            "type": "string"
+          },
+          "realDeliveryPrice": {
+            "description": "实付配送费",
+            "type": "string"
+          },
+          "realPackingFeeTotalPrice": {
+            "description": "实际打包费总价,单位元",
+            "type": "string"
+          },
+          "realTotalAmount": {
+            "description": "实际支付金额",
+            "type": "string"
+          },
+          "remark": {
+            "description": "订单备注",
+            "type": "string"
+          },
+          "status": {
+            "description": "订单状态",
+            "type": "string"
+          },
+          "storeAddress": {
+            "description": "门店地址",
+            "type": "string"
+          },
+          "storeName": {
+            "description": "门店名",
+            "type": "string"
+          },
+          "tablewarePrice": {
+            "description": "餐具费,单位元",
+            "type": "string"
+          },
+          "takeWay": {
+            "description": "取餐方式",
+            "type": "string"
+          },
+          "totalAmount": {
+            "description": "总金额",
+            "type": "string"
+          },
+          "totalDiscountAmount": {
+            "description": "总优惠金额",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "message": {
+        "description": "No comments found.",
+        "type": "string"
+      },
+      "traceId": {
+        "description": "No comments found.",
+        "type": "string"
+      }
+    },
+    "description": "OK"
+  }
+}
