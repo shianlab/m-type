@@ -27,6 +27,20 @@ M-TYPE 是一个可交给 Agent 使用的 Skill：连接麦当劳官方 MCP，�
 
 **当前为公开预览版。** 本地安装包、离线 HTML、手机／电脑 PNG 已验证；WorkBuddy、Codex 的原生安装与 MCP 全流程仍待实测。下方案例全部采用模拟数据。
 
+## 目标用户
+
+适合希望了解自己的点餐偏好、收藏消费回忆的麦当劳用户，以及希望通过 Agent 生成个人报告的用户。近期没有可获取记录时，也可以通过偏好问答获得趣味人格，历史档案保持留白。
+
+## 参赛材料
+
+本项目参加[麦当劳程序员创意开发大赛](https://github.com/M-China/mcd-developer-innovation-challenge)。审核材料位于仓库根目录：
+
+- [参赛声明（CONTEST_DECLARATION.md）](CONTEST_DECLARATION.md)：使用官方原文。
+- [MCP 接入说明（MCP_INTEGRATION.md）](MCP_INTEGRATION.md)：服务、工具、调用流程、业务价值及实测边界。
+- [脱敏 MCP 配置示例（mcp-config.example.json）](mcp-config.example.json)：凭证仅使用环境变量占位符，使用限制见 MCP 接入说明。
+
+项目代码与素材说明见 [NOTICE.md](NOTICE.md)；安装方法与使用示例见下文。
+
 ## 一句话，交给你的 Agent
 
 复制这一句给 WorkBuddy、Codex，或具备 Skill、文件执行和 MCP 能力的 Agent：
@@ -86,14 +100,7 @@ M-TYPE 是一个可交给 Agent 使用的 Skill：连接麦当劳官方 MCP，�
 
 ## 从安装到收下档案
 
-```mermaid
-flowchart LR
-    A[安装 Skill] --> B[连接官方 MCP]
-    B --> C[读取可获取记录]
-    C --> D[必要时补问偏好]
-    D --> E[匹配复古人格]
-    E --> F[生成 HTML 与长图]
-```
+> 安装 Skill → 连接官方 MCP → 读取可获取记录 → 必要时补问偏好 → 匹配复古人格 → 生成 HTML 与长图
 
 1. **安装。** 把一句话交给 Agent，或下载完整 ZIP，通过宿主的本地技能入口导入。
 2. **连接。** 在[麦当劳官方 MCP 平台](https://open.mcd.cn/mcp)登录并申请 Token，填入 Agent 的凭证入口。
